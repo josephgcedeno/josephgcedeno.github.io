@@ -65,10 +65,7 @@ input[type=text]{
 	padding: 0;
 	outline: none;
 }
-input:hover{
 
-border-bottom: 1px solid #e1375c;
-}
 input[type=password]{
 	text-align: center;
 	background-color: transparent;
@@ -81,7 +78,9 @@ input[type=password]{
 	padding: 0;
 	outline: none;
 }
-
+input:hover{
+border-bottom: 1px solid #e1375c;
+}
 button[type=submit]{
 	
 	font-weight: bold;
@@ -100,7 +99,7 @@ button[type=submit]{
 	text-align: center;
 	cursor: pointer;
 }
-button[type=submit]:hover{
+button:hover{
 	  background-color: #e1375c;
 
 }
