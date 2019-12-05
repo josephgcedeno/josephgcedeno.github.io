@@ -65,7 +65,10 @@ input[type=text]{
 	padding: 0;
 	outline: none;
 }
+input:hover{
 
+border-bottom: 1px solid #e1375c;
+}
 input[type=password]{
 	text-align: center;
 	background-color: transparent;
@@ -80,9 +83,9 @@ input[type=password]{
 }
 
 button[type=submit]{
-	color: #e1375c;
+	
 	font-weight: bold;
-	background-color: #e65b7a !important;
+	background-color: #e65b7a;
 	box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3);
 	border: none;
 	margin-top: 50px;
@@ -98,7 +101,7 @@ button[type=submit]{
 	cursor: pointer;
 }
 button[type=submit]:hover{
-	  background-color: yellow;
+	  background-color: #e1375c;
 
 }
 
