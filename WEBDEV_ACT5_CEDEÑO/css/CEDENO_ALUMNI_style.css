@@ -91,8 +91,8 @@ body {
  }
  .msgL{
 
-  margin-left: 20px;
-  border-bottom: 1px solid #cbcccc;
+
+  border-: 1px solid #cbcccc;
 }
 
 
@@ -109,11 +109,12 @@ body {
   border-radius: 10px;
   background: #f2a8b9;
   padding: 20px; 
-  width: 95%;
-  height: 100px;
+  width: 100%;
+
   
 
 }
+
 .headCont {
 position: absolute;
 margin-top: -210px;
@@ -137,7 +138,7 @@ color: black
   background: #fff;
   margin-top: -80px;
   margin-left: 50px;
-  width: 600px;
+  width: 60%;
   height: 55px;  
 
 }
@@ -145,10 +146,9 @@ color: black
   position: absolute;
   border-radius: 10px;
   background: black;
-  margin-top: -80px;
-  margin-left: 680px;
-  width: 120px;
-  height: 55px;  
+  margin-top: -13%;
+  margin-left:72%;
+  width: 20%;
   color: #ffF;
 
 }
