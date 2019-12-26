@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dice Cedeno</title>
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+
+		<div class="container">
+
+			<div class="login-box">
+				<center>
+				
+				</center>
+			<div class="row" onclick="myFunction()" style="cursor: pointer;" >
+				
+
+				<div class="col-md-6 login-left">
+
+					<br><br>
+					<center>
+		
+					
+					<strong  style="font-size: 50px;cursor: pointer;" id="1st">◉</strong>
+
+					</center>
+					<br><br>
+				</div>	
+				<br><br>
+				<div class="col-md-6 login-right">
+
+					<br><br>
+					<center>
+						
+					<strong style="font-size: 50px; cursor: pointer;"  id="2nd">◉</strong>
+					</center>
+					<br><br>
+				</div>
+
+			
+			</div>		
+			</div>	
+		</div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+	
+
+	function myFunction(){
+
+
+		//var fDice=document.getElementById('1st');
+		var num1=Math.floor(Math.random() * Math.floor(6));
+
+		var num2=Math.floor(Math.random() * Math.floor(6));
+
+		switch(num1)
+		{
+			case 0:
+			document.getElementById('1st').innerHTML ="◉";
+					break;
+
+			case 1:
+
+			document.getElementById('1st').innerHTML ="◉ ◉";
+
+					break;
+			case 2:
+			document.getElementById('1st').innerHTML ="◉ ◉<br> ◉";
+					break;
+			case 3:
+			document.getElementById('1st').innerHTML ="◉ ◉<br>◉ ◉";
+					break;
+			case 4:
+			document.getElementById('1st').innerHTML ="◉ ◉<br>◉<br>◉ ◉";
+					break;
+			case 5:
+			document.getElementById('1st').innerHTML ="◉ ◉ ◉<br>◉ ◉ ◉";
+					break;
+		
+
+		}
+		switch(num2)
+		{
+			case 0:
+			document.getElementById('2nd').innerHTML ="◉";
+					break;
+
+			case 1:
+
+			document.getElementById('2nd').innerHTML ="◉ ◉";
+
+					break;
+			case 2:
+			document.getElementById('2nd').innerHTML ="◉ ◉<br> ◉";
+					break;
+			case 3:
+			document.getElementById('2nd').innerHTML ="◉ ◉<br>◉ ◉";
+					break;
+			case 4:
+			document.getElementById('2nd').innerHTML ="◉ ◉<br>◉<br>◉ ◉";
+					break;
+			case 5:
+			document.getElementById('2nd').innerHTML ="◉ ◉ ◉<br>◉ ◉ ◉";
+					break;
+		
+
+		}
+
+
+	}
+</script>
