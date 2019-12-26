@@ -17,7 +17,7 @@ body{
 	border-radius: 25px;
 	border:solid white 1px;
 	background:black;
-	padding: 30px;
+	
 	color: white;
 }
 
@@ -25,7 +25,7 @@ body{
 		border:solid black 1px;
 	border-radius: 25px;
 	background: #fff;
-	padding: 30px; 
+	
 
 }
 
