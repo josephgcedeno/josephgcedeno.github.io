@@ -1,0 +1,16 @@
+
+.days:hover{
+	opacity: 0.8;
+}
+
+.pink{
+
+
+	margin-left: -300px;
+	position: absolute;
+	
+	text-align: center;
+}
+.boboColor:hover{
+	background-color: red;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calendar</title>
+
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="js/queryDropDown.js"></script>
+</head>
+
+<body>
+
+	<br>
+
+
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="pink" style=" width:100% !important">
+						
+				
+					<table class="table table-striped">
+			
+			        	<thead style="table-layout: auto !important;">
+			      			<tr id="days" >
+							
+							</tr>
+				   		</thead>
+
+				   		<tbody id="theResult">
+				   			
+				   			
+				   		</tbody>
+
+		   	   		</table>
+		   	   	    </div>
+				</div>
+
+		   	</div>
+		</div>
+	
+</body>
+<script type="text/javascript" src="js/calendar.js"></script>
+</html>
+
+
+<script type="text/javascript">
+
+
+
+	var countHMClient=document.getElementById('theResult');
+	//first param booked date & second the expected date
+	var dates=[[8,16],[9,14],[18,29],[3,26],[10,18]];
+	var color=["yellow","violet","pink","blue","grey"];
+	var clients=["Jon Bobo","William Bobo","Otis Bobo","Dick Bobo","Barry Bobo"];
+
+	for(var i=0;i<=5;i++)
+	{
+		countHMClient.innerHTML+=`<tr id="trsID${i}"></tr>`;
+		theTRs(i,dates[i][0],dates[i][1],color[i],clients[i]);
+	}
+
+	
+	function theTRs(id,start,end,color,names)
+	{
+
+	
+	var toPrint=document.getElementById(`trsID${id}`);
+	//alert(toPrint.innerHTML)
+		toPrint.innerHTML=` <td style="
+ background-color: black;"></td>
+							<td style="
+ background-color:black;"></td>
+							<td style="
+ background-color: black;"></td>
+							<td style="
+ background-color: black; color:white;"><h2>${names}</h2></td
+ ><td style="
+ background-color: black;"></td><td style="
+ background-color: black;"></td><td style="
+ background-color: black;"></td><td style="
+ background-color: black;"></td>`;
+
+	for(var i=0; i< 31;i++)
+	{	if (i>=start-1  && i <= end-1) 
+		{
+			toPrint.innerHTML+=`<td class="boboColor" style="padding: 20px; background-color: ${color};"></td>`;
+		}
+		else
+		{
+			toPrint.innerHTML+=`<td></td>`;
+		}
+		
+	}
+	}
+	
+</script>
