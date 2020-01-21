@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heat map</title>
+	<link rel="stylesheet" type="text/css" href="https://www.patrick-wied.at/static/heatmapjs/assets/css/commons.css">
+	<link rel="stylesheet" type="text/css" href="https://www.patrick-wied.at/static/heatmapjs/assets/css/example-commons.css">
+	<script type="text/javascript" src="https://www.patrick-wied.at/static/heatmapjs/assets/js/heatmap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<style>
+    .demo-wrapper { position:relative; background:rgba(0,0,0,.9); }
+    .text-bg { color:rgba(255,255,255,.8);  position:absolute; left:0; top:0; right:0; bottom:0; height:40px; width:230px; text-align:center; margin:auto; }
+
+  </style>
+      <style>
+    #share {
+      display:none;
+      float:right;
+      font-size:14px;
+      line-height:170%;
+    }
+    .symbol {display:inline !important; float:right;}
+  </style>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12880923-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
+
+
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6" >
+
+			
+				<iframe width="560" height="400" src="https://www.youtube.com/embed/DcvR7U9VgYo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="col-lg-6">
+				<div class="demo-wrapper">
+		            <div class="text-bg">
+		       		Heat map 
+		      		</div>
+		     	 <div class="heatmap" style="position: relative;">
+
+		      		<canvas class="heatmap-canvas" width="850" height="400" style="position: absolute; left: 0px; top: 0px;"></canvas>
+		  		</div>
+    			</div>
+			</div>
+			
+		</div>
+	</div>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+ <script src="assets/js/heatmap.min.js"></script>
+  <script>
+    window.onload = function() {
+      var heatmapContainer = document.querySelector('.heatmap');
+
+      var heatmapInstance = h337.create({
+        container: heatmapContainer,
+        radius: 50
+      });
+
+      heatmapContainer.onmousemove = heatmapContainer.ontouchmove = function(e) {
+          // we need preventDefault for the touchmove
+          e.preventDefault();
+          var x = e.layerX;
+          var y = e.layerY;
+          if (e.touches) {
+            x = e.touches[0].pageX;
+            y = e.touches[0].pageY;
+          }
+
+          heatmapInstance.addData({ x: x, y: y, value: 1 });
+     };
+     heatmapContainer.onclick = function(ev) {
+       heatmapInstance.addData({x: ev.layerX, y: ev.layerY, value:1 });
+     };
+
+
+        document.querySelector('.thankyou').onclick = function() {
+          ga('send','event', 'social', 'thanks');
+          document.querySelector('.thankyou').style.display = 'none';
+          document.querySelector('#share').style.display = 'block';
+        };
+        var btns = document.querySelectorAll('.symbol');
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].onclick = function() {
+            ga('send', 'event','social', 'share');
+          };
+        }
+
+    };
+  </script>
+  <script src="assets/third-party/prism/prism.js"></script>
+</html>
