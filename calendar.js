@@ -12,7 +12,7 @@
 	var fcol=``;
 	holdDate=` 			<th></th>
 						<th></th>
-					    <th><img src="img/minus.png" style="margin-top:-250%; width: 50px; height: 50px;" onclick="decrementMonth()" id="decrement"></th>
+					    <th><img src="minus.png" style="margin-top:-250%; width: 50px; height: 50px;" onclick="decrementMonth()" id="decrement"></th>
 					    <th>
 						
 						<input type="input" placeholder="2020" class="control-form" style="width: 150% !important; font-size: 20px; margin-top: 10px; border-radius: 2px !important; font-size: 15px; "  id="inputYear">
@@ -35,7 +35,7 @@
 					    <th></th>
 					    <th></th> 
 					    <th></th> 
-					    <th><img src="img/plus.png"  style="margin-top:-250%; width: 50px; height: 50px;"onclick="incrementMonth()" id="increment"></th>
+					    <th><img src="plus.png"  style="margin-top:-250%; width: 50px; height: 50px;"onclick="incrementMonth()" id="increment"></th>
 						`;
 	for(var i=0;i<d[2];i++)
 	{
@@ -128,7 +128,7 @@
 	
 		holdDate=`		<th></th>
 						<th></th>
-					    <th><img src="img/minus.png"  style="margin-top:-250%; width: 50px; height: 50px;" onclick="decrementMonth()" id="decrement"></th>
+					    <th><img src="minus.png"  style="margin-top:-250%; width: 50px; height: 50px;" onclick="decrementMonth()" id="decrement"></th>
 					    <th>
 					    <input type="input" placeholder="2020" class="control-form" style="width: 150% !important; font-size: 20px; margin-top: 10px; border-radius: 2px !important; font-size: 15px; "  id="inputYear" value=${yearValue}>
 						
@@ -144,7 +144,7 @@
 					    <th></th>
 					    <th></th> 
 					    <th></th> 
-					    <th><img src="img/plus.png"  style="margin-top:-250%; width: 50px; height: 50px;" onclick="incrementMonth()" id="increment"></th>`;
+					    <th><img src="plus.png"  style="margin-top:-250%; width: 50px; height: 50px;" onclick="incrementMonth()" id="increment"></th>`;
 		if (s[2]==28) {holdDate+=`<th></th>`}
 		toPrint.innerHTML="";
 	
