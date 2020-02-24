@@ -6,11 +6,13 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 	
 </head>
 <body>
-
+<table id="example" class="display" style="width:100%"> <thead> <tr> <th>Name</th> <th>Position</th> <th>Office</th> <th>Extn.</th> <th>Start date</th> <th>Salary</th> </tr> </thead> <tfoot> <tr> <th>Name</th> <th>Position</th> <th>Office</th> <th>Extn.</th> <th>Start date</th> <th>Salary</th> </tr> </tfoot> </table><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js plain">$(document).ready(</code><code class="js keyword">function</code><code class="js plain">() {</code></div><div class="line number2 index1 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">$(</code><code class="js string">'#example'</code><code class="js plain">).DataTable( {</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js string">"ajax"</code><code class="js plain">: </code><code class="js string">'../ajax/data/arrays.txt'</code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">} );</code></div><div class="line number5 index4 alt2"><code class="js plain">} );</code></div></div></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2" style="display: none;">1</div></td><td class="code"><div class="container" style="display: none;"><div class="line number1 index0 alt2" style="display: none;">&nbsp;</div></div></td></tr></tbody></table>
 </body>
 </html>
 <script type="text/javascript">
@@ -19,17 +21,11 @@
 		 {
 
 
-		   var people = [];
-
-		   $.ajax({
-			  dataType: "json",
-			  url: 'source.json',
-			  success: function(data)
-			   {
-				   console.log(data);
-			   }
-			   
-			});
+		  $(document).ready(function() {
+			    $('#example').DataTable( {
+				"ajax": 'source.json'
+			    } );
+			} );
 			 
 		});
 	   
