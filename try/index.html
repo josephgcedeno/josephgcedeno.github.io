@@ -19,13 +19,14 @@
 		   var people = [];
 
 		   $.getJSON('source.json', function(data) {
-		  			alert("ss");
+		  			
 		       $.each(data, function(i, f) 
 		       {
-		        
+		        people.push(f);
 		       });
 
 		   });
+		console.log(people);
 		});
 	   
 </script>
