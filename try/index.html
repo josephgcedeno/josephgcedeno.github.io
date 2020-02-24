@@ -21,15 +21,16 @@
 
 		   var people = [];
 
-		   $.getJSON('source.json', function(data) {
-		  			
-		       $.each(data, function(i, f) 
-		       {
-		        people.push(i+f);
-		       });
-
-		   });
-			console.log(people);
+		   $.ajax({
+			  dataType: "json",
+			  url: source.json,
+			  data: data,
+			  success: function(data)
+			   {
+				   console.log(data);
+			   }
+			   
+			});
 			 
 		});
 	   
