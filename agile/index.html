@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>BATIBOT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+a#sidebarss{
+ font-size: 10px;
+
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Agile Manifesto</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+
+  <h4 class="w3-bar-item"><b>Four Values of The Agile Manifesto</b></h4>
+  <a id="sidebarss"class="w3-bar-item w3-button w3-hover-black" href="#v1">1.) Individuals and Interactions Over Processes and Tools</a>
+  <a id="sidebarss"class="w3-bar-item w3-button w3-hover-black" href="#v2">2.) Working Software Over Comprehensive Documentation</a>
+  <a id="sidebarss"class="w3-bar-item w3-button w3-hover-black" href="#v3">3.) Customer Collaboration Over Contract Negotiation</a>
+  <a id="sidebarss"class="w3-bar-item w3-button w3-hover-black" href="#v4">4.) Responding to Change Over Following a Plan</a>
+  <h4 class="w3-bar-item"><b>Manifesto Principles</b></h4>
+
+
+  <a id="sidebarss"class="w3-bar-item w3-button w3-hover-black" href="#p1">1.) Satisfying customers through early and continuous delivery of valuable work</a>
+  <a id="sidebarss"class="w3-bar-item w3-button w3-hover-black" href="#p2">2.) Accommodate changing requirements throughout the development process</a>
+  <a id="sidebarss"class="w3-bar-item w3-button w3-hover-black" href="#p3">3.) Frequent delivery of working software</a>
+  <a id="sidebarss"class="w3-bar-item w3-button w3-hover-black" href="#p4">4.) Collaboration between the business stakeholders and developers throughout the project</a>
+  <a id="sidebarss"class="w3-bar-item w3-button w3-hover-black" href="#p5">5.) Support, trust, and motivate the people involved</a>
+  <a id="sidebarss"class="w3-bar-item w3-button w3-hover-black" href="#p6">6.) Enable face-to-face interactions</a>
+  <a id="sidebarss"class="w3-bar-item w3-button w3-hover-black" href="#p7">7.) Working software is the primary measure of progress</a>
+  <a id="sidebarss"class="w3-bar-item w3-button w3-hover-black" href="#p8">8.) Agile processes to support a consistent development pace </a>
+  <a id="sidebarss"class="w3-bar-item w3-button w3-hover-black" href="#p9">9.) Attention to technical detail and design enhances agility</a>
+  <a id="sidebarss"class="w3-bar-item w3-button w3-hover-black" href="#p10">10.) Simplicity </a>
+  <a id="sidebarss"class="w3-bar-item w3-button w3-hover-black" href="#p11">11.) Self-organizing teams encourage great architectures, requirements, and designs</a>
+  <a id="sidebarss"class="w3-bar-item w3-button w3-hover-black" href="#p12">12.) Regular reflections on how to become more effective </a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+      
+<div class="w3-row w3-padding-64">
+
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal" >Agile manifesto for software development</h1>
+      <p>The agile development practices approach discovering requirements and developing solutions through the collaborative effort of self-organizing and cross-functional teams and their customers or end users. It advocates adaptive planning, evolutionary development, early delivery, and continual improvement, and it encourages flexible responses to change. The Agile manifesto and the Twelve Principles of Agile Software was developed in the 2000s due to a time lag between business requirements and the development and delivery of the required tech which led to a cancellation of many projects. In February 2001, 17 people met at the Snowbird ski resort in Utah. They were the leading exponents of Extreme Programming, Scrum and Adaptive Software Development, and they were seeking a set of compatible values based on trust, respect and collaboration. They wanted to make software development easier. And they found it in the form of a manifesto. Their only concern was that the term describing the manifesto came from someone from britain and they weren't sure how to pronounce it. The four values of the agile manifesto compromises of four foundational values and 12 supporting principles. Each principle applies the foundational values in a variety of ways.</p>
+    </div>
+  
+  </div>
+  <div class="w3-row w3-padding-64" id="v1">
+
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal" >Individuals and Interactions Over Processes and Tools</h1>
+      <p>The first value is "Individuals and Interactions Over Processes and Tools." Where individuals are to be valued more that the processes or tools used as they are the ones who respond to business needs and drive the development process. It can be seen being utilized in communication where it is required to be able to efficiently understand the needs of the business and better develop the solution. Focusing on communication, this value gives individuals and interactions greater importance than the processes and tools. If teams align, they can drive the process more effectively while responding faster to the business and functional requirements. When tools and processes dominate the activity, the team members can become less receptive to the needs of the client and eventually, the customers. It is always recommended to encourage communication among teams instead of depending on procedures to manage the way forward. Team members can be flexible and prompt in solving a problem rather than relying on tools or processes, which makes it more time-oriented and less frequent.</p>
+    </div>
+  
+  </div>
+
+  
+  <div class="w3-row w3-padding-64"  id="v2">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Working Software Over Comprehensive Documentation</h1>
+      <p>The second value is "Working Software Over Comprehensive Documentation". Documentation of the product for development and final delivery. Agile does not eliminate documentation but streamlines it instead by requiring them to be user stories which is sufficient for a developer to begin the task of building a new function. This allows for agile to place a higher value on developing the software.
+Time is the essence here – an Agile approach doesn’t wholly defy documentation but offers a developer a working software to get started. Traditional project management included extensive documentation, which involved a slack for months. This would affect the project delivery, and the delays were inescapable.
+The sooner you resolve the issues with customer feedback, the faster you can move to the next problem or the project. Agile streamlines documentation, and offers developers what they need to maintain their work without getting stalled in technicalities. Agile values documentation, yet, it values working programming more. This means that the teams are responsive and ready to accept challenges whenever required by adhering the product mindset over project mindset.</p>
+    </div>
+   
+  </div>
+
+  <div class="w3-row w3-padding-64"  id="v3">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Customer Collaboration Over Contract Negotiation</h1>
+      <p>The third value is the customer collaboration over contract negotiation. Negotiation is when the
+customer and the product manager discuss the details of the software. This could range from requirements, constraints and special cases among other things. The agile manifesto prefers a customer who is  actively participating in the development such as demos among other things.
+Contract negotiations usually happen when the customer and the product manager work on the details of the product towards the start of the process with little scope for changes along the way. This greatly rules out the possibility of the customer participating in the development process. The Agile Manifesto favors customer collaboration over contract negotiations. Customer collaboration refers to the process of the customer teaming up all through the development procedure.
+Agile allows an open-end discussion between the customer and the developers. It enables the coordinated teams to align better with the customer requirements. A committed product owner can help the team clarify things in real-time and adjust the tasks according to the customer’s needs.
+.</p>
+    </div>
+  
+  </div>
+
+  <div class="w3-row w3-padding-64" id="v4">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Responding to Change Over Following a Plan</h1>
+      <p>The fourth and final value is responding to change over following a plan. With agile, the shortness of  project iteration means priorities can be shifted from subsequent iteration and new features can be added into the next iteration. Agile requires changes to always improve a project that provides additional value.
+
+The usual approach to the software development process is to avoid any changes since they may incur costs and lead to higher expenses. However, with Agile due to multiple iterations, the tasks keep changing, and with every sprint, these inputs help the project get better and create value. The value focuses on being receptive to the demands of the customers during the project rather than creating elaborate plans right at the beginning that are dismissive of changes.
+Change is a constant process, and at times the customers might want new additions, features, etc. to the product. Adapting to their demand can help the product owner and the teams build a more accurate product and ensure their client’s satisfaction.</p>
+    </div>
+   
+  </div>
+
+
+  <div class="w3-row w3-padding-64" id="p1">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Satisfying customers through early and continuous delivery of valuable work</h1>
+      <p>The first principle in Agile Manifesto is Satisfying customers through early and continuous delivery of valuable work, this simply means staying consistent and providing the customer what they need. Given the scenario after developing, we should show a demo to the customer and receive feedback, and always do it consistently.</p>
+    </div>
+    
+  </div>
+  <div class="w3-row w3-padding-64" id="p2">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Accommodate changing requirements throughout the development process</h1>
+      <p>Breaking big work down into smaller tasks that can be completed quickly, this simply means if there is a package of works, breaking it to smaller branches so that we can work on the particular branches easily. Given the scenario of developing a login part of the system, it would be easy if we divide it to designing the layout and validation functionality so that we can easily work with that different branch.</p>
+    </div>
+   
+  </div>
+
+  <div class="w3-row w3-padding-64" id="p3">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Frequent delivery of working software</h1>
+      <p>Recognizing that the best work emerges from self-organized teams, this simply means we should know the importance of finding our own work and manage the associated responsibilities and timelines, without depending on a project leader to assign us. Given a scenario, that I have already done my job of this part of the project, maybe I can be productive by working another part or helping my team and not wait for my leader to assign me.</p>
+    </div>
+    
+  </div>
+
+  <div class="w3-row w3-padding-64" id="p4">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Collaboration between the business stakeholders and developers throughout the project</h1>
+      <p>The fourth principle is to provide motivated individuals with the environment and support they need and trusting them to get the job done. Obviously, environment has a big impact in someone's work, it could affect negatively or positively. Example is if you want to obtain great results, the job should be assigned to people who you trust the most. When you give someone a task, they will feel reliable and will likely to provide the results you expected. And no one wants to work for someone that doesn’t trust them except for money and that's toxic and short term. </p>
+    </div>
+   
+  </div>
+
+  <div class="w3-row w3-padding-64" id="p5">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Next is creating processes that promote sustainable efforts. The team's method should bring out the best in them not only in the beginning but also throughout the process up until the end of the project. We should exert the same effort and maintain until the job's done because the project's outcome relies on it. Satisying the customers is a top priority.</p>
+    </div>
+    
+  </div>
+
+  <div class="w3-row w3-padding-64" id="p6">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Enable face-to-face interactions</h1>
+      <p>Number 6, maintain a constant pace for completed work. Focus on sustainability and long term development not short term gains from one project. The key of the principle is more towards protecting against burnout from developers. To combat burnout is to allow the developers working on their items the ability to estimate their work and track what they complete and hold them accountable. If you notice someone is taking on way less than the average, challenge them to take on more.</p>
+    </div>
+    
+  </div>
+
+  <div class="w3-row w3-padding-64" id="p7">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Working software is the primary measure of progres</h1>
+      <p>Agile processes harness change for the costumer's competitive advantage,We become 
+more knowledgeable when we spend time working on something.
+ 
+In the beginning we may have a lot of knowledge but not as much as we've done working.
+Our Customers even understand more clearly after seeing the increment/blue print provided by the clients
+
+Scenario:Customer always keep changing things 1 week before the deadline, they want some changes on how the ui behaves
+</p>
+    </div>
+    
+  </div>
+
+  <div class="w3-row w3-padding-64" id="p8">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Agile processes to support a consistent development pace</h1>
+      <p>Better decisions are made when the business and technical team are aligned.
+Many reason projects fali is insufficient requirements
+*Costumers doesnt know what they want 
+*Costumers cant clearly express what they want 
+*Costumers may not have the solution to this problem
+
+
+Scenario: Lack of Communication
+The costumer met the specification but it did not solve the problem
+
+The costumer wants a light colored background in the website but he/she did not 
+like the color that the client made.
+
+collaborate with the costumer to identify their desired benefits and their problems that needed to be solved.
+.</p>
+    </div>
+ 
+  
+  </div>
+
+  <div class="w3-row w3-padding-64" id="p9">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Attention to technical detail and design enhances agility</h1>
+      <p>Having the team reflect at regular intervals on how to become more effective, then tuning and adjusting behavior accordingly. is one of the 12 principles of the agile manifesto it means While responding to change clearly identifies changes to the scope of the software, it’s also important for agile teams to respond to changes in process, team composition, and workflow.  and it’s important to regularly meet to reflect and adjust your behavior. 
+
+Scenario: Every member of the team  should meet and responds the changes and process.</p>
+    </div>
+   
+  </div>
+
+  <div class="w3-row w3-padding-64" id="p10">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Simplicity</h1>
+      <p>Measuring progress by the amount of completed work is usually a task that is done repeatedly tends to take about the same amount of time, resources and effort, so tracking the units completed works.
+
+Scenario: Every member should update and keep track of the completed works.
+</p>
+    </div>
+    
+  </div>
+
+  <div class="w3-row w3-padding-64" id="p11">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Self-organizing teams encourage great architectures, requirements, and designs</h1>
+      <p>It is a given that in software development, quality is always an emphasis. Quality is what makes and breaks a software. That is why many projects are involved with such intricate and intensive quality assurance to check for the quality of the applications and make sure that the product that is given to the clients is the best.</p>
+    </div>
+  
+  </div>
+
+  <div class="w3-row w3-padding-64" id="p12">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Regular reflections on how to become more effective</h1>
+      <p>The word agile has a striking similarity to the principle harnessing change. An agile development is a development that is able to move quickly and easily. Harnessing change is a way to be able to adapt the growing industry. Innovation impacts everything and everything is a constant change. Change isn’t always great although so the principle intricately says that we should welcome change that will get us to a competitive advantage. A scenario that I can picture is when there are certain changes that will need to be made in your sorted out plan. Perhaps a roadplan that you need to follow discovers a certain change that could make the project better. Agile Principles states to never frown at change.</p>
+    </div>
+    
+  </div>
+
+
+
+  <!-- Pagination 
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+-->
+  <footer id="myFooter">
+   
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
